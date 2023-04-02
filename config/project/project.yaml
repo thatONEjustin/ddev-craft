@@ -1,0 +1,22 @@
+dateModified: 1680401755
+email:
+  fromEmail: justinpaelmo@gmail.com
+  fromName: justin
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    c8ca0ddd-4979-4aa0-a4c0-e7e08049f448: justin # justin
+    dc59275f-71c7-4a3d-bb70-d3cb8a1c80b6: justin # justin
+    f93dc603-4a61-4975-b62d-098e9f2f6103: Common # Common
+system:
+  edition: solo
+  live: true
+  name: justin
+  schemaVersion: 4.4.0.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
