@@ -1,4 +1,4 @@
-dateModified: 1680401755
+dateModified: 1680407459
 email:
   fromEmail: justinpaelmo@gmail.com
   fromName: justin
@@ -8,6 +8,14 @@ meta:
     c8ca0ddd-4979-4aa0-a4c0-e7e08049f448: justin # justin
     dc59275f-71c7-4a3d-bb70-d3cb8a1c80b6: justin # justin
     f93dc603-4a61-4975-b62d-098e9f2f6103: Common # Common
+plugins:
+  mix:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      assetPath: assets/dist
+      publicPath: web
 system:
   edition: solo
   live: true
