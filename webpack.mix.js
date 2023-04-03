@@ -1,9 +1,12 @@
-let mix = require('laravel-mix');
 require('laravel-mix-copy-watched');
-const tailwindcss = require('tailwindcss');
 require('laravel-mix-esbuild');
+
+let mix = require('laravel-mix');
+
+const tailwindcss = require('tailwindcss');
 const web = 'web/assets/src';
 const dist = 'web/assets/dist';
+
 // Javascript
 mix.js(web + '/js/app.js', dist+'/js/app.js')
     .esbuild();
@@ -21,7 +24,7 @@ mix.sourceMaps(true, 'source-map');
 mix.copyDirectoryWatched([`${web}/images`], `${dist}/images`, { base: 'images' });
 // mix.copyDirectoryWatched(['web/assets/src/fonts'], 'web/assets/dist/fonts');
 
-// mix.browserSync({
-//     proxy: 'http://pathways.test',
-//     files: ['./templates/**/*', './web/assets/dist/**/*']
-// });
+mix.browserSync({
+    proxy: 'https://ddev-craft.ddev.site:420/',
+    files: ['./templates/**/*', './web/assets/dist/**/*']
+});

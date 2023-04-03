@@ -4,7 +4,24 @@
 
 {% extends "_layout" %}
 {% block content %}
-    <h1>Welcome Hand Mouth and Butt Stuff!</h1>
+<div 
+    class="container mx-auto" 
+    x-data="{
+        test: 'I like coding stuff',
+        input: '',
+    }">
+
+    <h1 class="text-[100px] text-center" x-text="test" x-transition></h1>
+    
+    <div class="flex flex-col items-start">
+            
+        <input class="border mb-2 rounded p-2" type="text" x-model="input" />
+        <button class="btn" @click="test = input">Change Text</button>
+        <button class="btn" @click="test = ''">Reset</button>
+        
+    </div>
+
+</div>
 {% endblock %}
 
 {% block scripts %}
