@@ -4,3 +4,4 @@
 !/craft/storage/rebrand
 vendor
 node_modules
+assets/dist/*
